@@ -3,108 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatGPT - OpenAI</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Meu Primeiro Site</title>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #212121;
+            background-color: #333;
             color: white;
-            padding: 20px 0;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .main-content {
+            padding: 20px;
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
+        .main-content h2 {
             font-size: 2.5em;
-        }
-
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
-        .section {
-            margin: 40px 0;
-        }
-
-        .section h2 {
-            color: #333;
-            font-size: 2em;
             margin-bottom: 20px;
         }
 
-        .section p {
-            color: #555;
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: #0078d4;
-            color: white;
+        .main-content p {
             font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            color: #333;
         }
 
         footer {
-            background-color: #212121;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
-            position: absolute;
+            padding: 10px 0;
+            position: fixed;
             width: 100%;
             bottom: 0;
-        }
-
-        footer a {
-            color: #0078d4;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>ChatGPT da OpenAI</h1>
-        <p>A próxima evolução em IA de conversação</p>
+        <h1>Bem-vindo ao Meu Primeiro Site</h1>
     </header>
 
-    <div class="container">
-        <section class="section">
-            <h2>O que é o ChatGPT?</h2>
-            <p>O ChatGPT é um modelo de linguagem avançado treinado pela OpenAI para gerar texto de forma natural e interativa. Ele pode entender e gerar linguagem humana, oferecendo assistências em tarefas como redação, programação, tradução e mais!</p>
-        </section>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-        <section class="section">
-            <h2>Como Funciona?</h2>
-            <p>O ChatGPT utiliza uma arquitetura de rede neural de última geração chamada GPT (Generative Pre-trained Transformer). Ele é treinado com grandes volumes de dados para entender contextos e responder de maneira coerente e informativa.</p>
-            <a href="#" class="cta-button">Experimente agora</a>
-        </section>
+    <div class="main-content" id="home">
+        <h2>Introdução ao Meu Site</h2>
+        <p>Este é o meu primeiro site simples feito em HTML! Aqui você pode encontrar informações sobre mim, meus projetos e formas de entrar em contato.</p>
+    </div>
 
-        <section class="section">
-            <h2>Aplicações</h2>
-            <p>ChatGPT é utilizado em diversos campos como atendimento ao cliente, criação de conteúdo, automação de tarefas e assistentes pessoais. Ele pode ajudar a melhorar a produtividade e otimizar processos.</p>
-        </section>
+    <div class="main-content" id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor iniciante aprendendo HTML, CSS e JavaScript. Este site serve como uma introdução ao que estou aprendendo.</p>
+    </div>
+
+    <div class="main-content" id="contato">
+        <h2>Contato</h2>
+        <p>Você pode me encontrar nas redes sociais ou entrar em contato através do e-mail: exemplo@dominio.com</p>
     </div>
 
     <footer>
-        <p>&copy; 2025 OpenAI | <a href="https://openai.com">Visite nosso site</a></p>
+        <p>&copy; 2025 Meu Primeiro Site</p>
     </footer>
 
 </body>
