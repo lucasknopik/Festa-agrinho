@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,64 +9,65 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px 0;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
-            padding: 10px;
+            background-color: #333;
         }
 
         nav a {
             color: white;
+            padding: 14px 20px;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
+            text-align: center;
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #ddd;
+            color: black;
         }
 
-        .main-content {
+        section {
             padding: 20px;
-            text-align: center;
-        }
-
-        .main-content h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .main-content p {
-            font-size: 1.2em;
-            color: #333;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
+            text-align: center;
+            padding: 10px;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 10px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bem-vindo ao Meu Primeiro Site</h1>
+        <h1>Bem-vindo ao Meu Site!</h1>
     </header>
 
     <nav>
@@ -75,24 +76,28 @@
         <a href="#contato">Contato</a>
     </nav>
 
-    <div class="main-content" id="home">
-        <h2>Introdução ao Meu Site</h2>
-        <p>Este é o meu primeiro site simples feito em HTML! Aqui você pode encontrar informações sobre mim, meus projetos e formas de entrar em contato.</p>
-    </div>
+    <div class="container">
+        <section id="home">
+            <h2>Início</h2>
+            <p>Este é o início do meu site. Aqui você pode encontrar informações sobre diversos temas!</p>
+        </section>
 
-    <div class="main-content" id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor iniciante aprendendo HTML, CSS e JavaScript. Este site serve como uma introdução ao que estou aprendendo.</p>
-    </div>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Este site foi feito para demonstrar um simples exemplo de como criar páginas web com HTML e CSS.</p>
+        </section>
 
-    <div class="main-content" id="contato">
-        <h2>Contato</h2>
-        <p>Você pode me encontrar nas redes sociais ou entrar em contato através do e-mail: exemplo@dominio.com</p>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Se você deseja entrar em contato, envie um e-mail para <a href="mailto:exemplo@dominio.com">exemplo@dominio.com</a>.</p>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Meu Primeiro Site</p>
+        <p>&copy; 2025 Meu Site - Todos os direitos reservados.</p>
     </footer>
 
 </body>
 </html>
+
+
